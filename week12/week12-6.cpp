@@ -1,0 +1,13 @@
+///week12-6.cpp
+///§âfor°j°é¡A§â°}¦Cans[i] = nums[num[i]]
+class Solution {
+public:
+    vector<int> buildArray(vector<int>& nums) {
+        int N = nums.size();
+        vector<int> ans(N);
+        for(int i=0; i<N; i++){
+            ans[i] = nums[nums[i]];
+        }
+        return ans;
+    }
+};
